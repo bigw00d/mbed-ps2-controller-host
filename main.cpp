@@ -5,11 +5,12 @@
 
 #include "mbed.h"
 #include "platform/mbed_thread.h"
-
+#include "PS_PAD.h"
 
 // Blinking rate in milliseconds
-#define BLINKING_RATE_MS                                                    500
+#define BLINKING_RATE_MS   100
 
+PS_PAD ps2(PB_15,PB_14,PB_13, PC_4);
 
 int main()
 {
